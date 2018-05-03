@@ -2,14 +2,16 @@
 @import '../../_ntnx/variables';
 @import '../../_ntnx/mixins';
 
-*    { @include transition(all) }
+//variables
 html { @include font; color:white;}
 h1 {font:$h1}
 h2 {font:$h2; font-weight: 500; line-height: 1.5; margin-top:0;}
 h3 {font:$h3; line-height: 1.2; margin-top:5px;}
 h4 {font:$h4}
 p  {font:$p; opacity: 0.7;}
+a { @include link;}
 
+//primitives
 body {
   @include flex(center, center, column);
   @include size(100vh , 100vw);
@@ -19,11 +21,12 @@ body {
   background: #2c2d44;
 }
 aside{
-  width: 150px;
+  width: 180px;
+  min-width: 180px;
   padding-right: 40px;
 }
 hr{
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
   height: 1px;
   border: none;
   width: 100%;
@@ -33,30 +36,89 @@ input[type=text]{
   -webkit-appearance:none;
   border: none;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 6px 8px;
   box-sizing: border-box;
   width: 100%;
   outline: none;
   color:white;
   background-color: rgba(255,255,255,0.05);
   font: $p;
-  @include transition(all);
+  @include transition(color);
 
   &:focus{
     color:$font-color-1;
     background-color: rgba(255,255,255, 1);
+    &::placeholder{
+      color: $border-color-1;
+    }
+  }
+  &::placeholder{
+    color: rgba(255,255,255,0.4);
   }
 }
-
 article{
   @include size(600px, 100%);
   @include flex(center, flex-start, column);
 }
 
-.primary  {@include primary}
-.secondary{@include secondary-alt}
-.inactive {opacity: 0.3}
+//buttons
 .btns { margin-top:20px;}
+.primary  {@include primary}
+.secondary{
+  @include secondary-alt
+  color:white;
+  border: 1px solid rgba(255,255,255,0.4);
+  background-color: transparent;
+  &:hover{
+    color:white;
+    background-color:rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+  &:active{
+    background-color:rgba(0,0,0,0.16);
+  }
+}
+
+//steps states
+.inactive {
+  opacity: 0.2;
+  .badge{
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+  }
+}
+.completed{
+  opacity: 0.2;
+  text-decoration: line-through;
+  .badge{
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    text-decoration: none;
+    text-decoration: initial;
+  }
+}
+
+//badges
+.badge{
+  font:$p;
+  @include size(20px, 20px);
+  @include flex(center, center, row);
+  display: inline-flex;
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color:rgba(0,0,0,0.08);
+  border-radius:4pc;
+  border:1px solid white;
+  transition:
+    background-color 0.2s $animation,
+    color            0.3s $animation,
+    border-color     0.3s $animation;
+}
+
+//layout
 .two-col  {@include flex(flex-start, space-between, row)}
 .fs{
   @include size(100vh, 100vw);
@@ -65,12 +127,22 @@ article{
 }
 .fw{ width: 100%;}
 
+//other
 .eula{
   height: 40vh;
   white-space: pre-line;
   overflow: scroll;
 }
 
+.agreed{
+  opacity: 1;
+}
+
+// .hd{
+//   border-radius:4px;
+//   background-color: rgba(255,255,255, 0.04);
+//   padding: 15px;
+// }
 .signature{
   display: flex;
   justify-content: between;
@@ -82,8 +154,6 @@ article{
   @include flex(flex-start, center, column);
   max-width: 500px;
 }
-
-
 
 
 //particle animation
