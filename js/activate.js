@@ -2,16 +2,15 @@ const activation=`
   <h2>Product activation</h2>
   <p>
     In order to run this cluster you need to license it.
-  </br>Login to the licensing page in our support portal to upload the cluster summary file.
-    Follow the steps and generate the License file.
+  </br>Login to the licensing page in our support portal to upload the cluster summary file provided.
   </p>
   <div clas='two-col'>
-    <button class='secondary' style='margin-bottom:20px; margin-right:10px;'>
+    <a><button class='secondary' style='margin-bottom:20px; margin-right:10px;'>
       Download Cluster File
-    </button>
-    <button class='secondary' style='margin-bottom:20px;'>
-      Go to licensing Page
-    </button>
+    </button></a>
+  <a href='http://my.nutanix.com'>  <button class='secondary' style='margin-bottom:20px;'>
+      Licensing Page
+    </button></a>
   </div>
   <hr>
 
@@ -24,11 +23,7 @@ const activation=`
       Upload license
     </button>
   </div>
-  <hr>
 
 
-  <div class='two-col fw btns'>
-    <button class='secondary previous'>Previous</button>
-    <button class='primary accept' style='opacity:0.4'>Activate</button>
-  </div>
+
 `;

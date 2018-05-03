@@ -14,7 +14,7 @@ By enabling Pulse you elect and authorize Nutanix to electronically collect Puls
   <hr>
 
   <div class='two-col fw btns'>
-    <button class='secondary previous'>Previous</button>
+    <button class='secondary previous' style='opacity:0;'>Previous</button> 
     <button class='primary expand'> Continue</button> <button class='primary accept' style='display:none;'>  Accept</button>
   </div>
 `;
