@@ -1,0 +1,278 @@
+#prototypeContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 10000;
+}
+#prototypeContainer .prototypeMenu {
+  background: #343536;
+  border-radius: 5px;
+}
+#prototypeContainer .prototypeMenu a {
+  color: #cccccc;
+}
+#prototypeContainer .prototypeMenu a:hover,
+#prototypeContainer .prototypeMenu a:active,
+#prototypeContainer .prototypeMenu a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+#prototypeContainer .prototypeMenu header {
+  position: relative;
+  padding: 15px 0 0;
+}
+#prototypeContainer .prototypeMenu header .close {
+  float: right;
+  width: 40px;
+  line-height: 20px;
+  text-align: center;
+}
+#prototypeContainer .prototypeMenu header .close:hover svg {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#prototypeContainer .prototypeMenu header .header-text {
+  line-height: 20px;
+  padding: 0 20px;
+  margin: 0 0 5px;
+}
+#prototypeContainer .prototypeMenu > ul {
+  list-style: none;
+}
+#prototypeContainer .prototypeMenu > ul > li.prototype-item {
+  position: relative;
+  line-height: 30px;
+  color: #cccccc;
+}
+#prototypeContainer .prototypeMenu .prototype-item:before,
+#prototypeContainer .prototypeMenu .prototype-item:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 5px;
+  top: 50%;
+  right: 30px;
+  margin-top: -1px;
+  -webkit-transform-origin: 90% center;
+  -moz-transform-origin: 90% center;
+  -ms-transform-origin: 90% center;
+  -o-transform-origin: 90% center;
+  transform-origin: 90% center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#prototypeContainer .prototypeMenu .prototype-item:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#prototypeContainer .prototypeMenu .prototype-item:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#prototypeContainer .prototypeMenu .prototype-item:hover:before,
+#prototypeContainer .prototypeMenu .prototype-item:hover:after {
+  opacity: 1;
+  right: 20px;
+  color: #ffffff;
+}
+#prototypeContainer .prototypeMenu .prototype-item a {
+  display: block;
+  padding: 0 40px 0 20px;
+  line-height: 30px;
+  color: currentColor;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#prototypeContainer.-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prototypeContainer.-show .prototypeMenu {
+  -webkit-animation: prototypeFadeIn 300ms ease;
+  -moz-animation: prototypeFadeIn 300ms ease;
+  -o-animation: prototypeFadeIn 300ms ease;
+  animation: prototypeFadeIn 300ms ease;
+}
+.prototypeInteractionMenu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 10000;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prototypeInteractionMenu ul {
+  background: #343536;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  padding: 0 20px;
+  display: inline-block;
+  list-style: none;
+  z-index: 10000;
+}
+.prototypeInteractionMenu ul li {
+  line-height: 40px;
+  display: inline-block;
+  -webkit-animation: prototypeMenu 0.6s ease;
+  -moz-animation: prototypeMenu 0.6s ease;
+  -o-animation: prototypeMenu 0.6s ease;
+  animation: prototypeMenu 0.6s ease;
+}
+.prototypeInteractionMenu ul li:not(:first-child):before {
+  content: '';
+  display: inline-block;
+  background-color: #666666;
+  height: 10px;
+  width: 1px;
+  border-radius: 3px;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+.prototypeInteractionMenu ul li a {
+  color: #cccccc;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.prototypeInteractionMenu ul li a:hover,
+.prototypeInteractionMenu ul li a:focus,
+.prototypeInteractionMenu ul li a:active {
+  color: #ffffff;
+}
+#prototypeComponentsBarMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 33%;
+  padding: 0;
+  max-width: 370px;
+  z-index: 10000;
+  background: #ffffff;
+  overflow: auto;
+  display: none;
+}
+#prototypeComponentsBarMenu.-show {
+  display: block;
+}
+#codeEditorPanel {
+  position: fixed;
+  z-index: 10000;
+  width: calc(50% - 250px);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+#codeEditorPanel.-show {
+  display: block;
+}
+/* Animations */
+lesshat-selector {
+  -lh-property: 0; }
+@-webkit-keyframes prototypeFadeIn{ 0% { -webkit-transform: translate(0, 50px); opacity: 0; } 100% { -webkit-transform: translate(0, 0); opacity: 1; } }
+@-moz-keyframes prototypeFadeIn{ 0% { -moz-transform: translate(0, 50px); opacity: 0; } 100% { -moz-transform: translate(0, 0); opacity: 1; } }
+@-o-keyframes prototypeFadeIn{ 0% { -o-transform: translate(0, 50px); opacity: 0; } 100% { -o-transform: translate(0, 0); opacity: 1; } }
+@keyframes prototypeFadeIn{ 0% {-webkit-transform: translate(0, 50px);-moz-transform: translate(0, 50px);-ms-transform: translate(0, 50px);transform: translate(0, 50px); opacity: 0; } 100% {-webkit-transform: translate(0, 0);-moz-transform: translate(0, 0);-ms-transform: translate(0, 0);transform: translate(0, 0); opacity: 1; } }
+.lh-dummy { -lh-property:0;
+}
+lesshat-selector {
+  -lh-property: 0; }
+@-webkit-keyframes prototypeMenu{ 0% { line-height: 0px; opacity: 0; } 50% { line-height: 40px; opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes prototypeMenu{ 0% { line-height: 0px; opacity: 0; } 50% { line-height: 40px; opacity: 0; } 100% { opacity: 1; } }
+@-o-keyframes prototypeMenu{ 0% { line-height: 0px; opacity: 0; } 50% { line-height: 40px; opacity: 0; } 100% { opacity: 1; } }
+@keyframes prototypeMenu{ 0% { line-height: 0px; opacity: 0; } 50% { line-height: 40px; opacity: 0; } 100% { opacity: 1; } }
+.lh-dummy { -lh-property:0;
+}
+.modal.prototype .n-modal-wrapper .n-modal-content-wrapper {
+  padding: 0 0 5px;
+}
+.modal.prototype .n-modal-wrapper .n-modal-content-wrapper form .form-group {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.modal.prototype .form-horizontal .control-group {
+  border: 1px solid #cccccc;
+  border-width: 1px 0 1px 0;
+  padding: 20px 20px;
+  margin: -1px 0 0;
+}
+.modal.prototype form .form-group-divider {
+  height: 0;
+  border-bottom: 1px solid #dddddd;
+  background: none;
+  margin: 20px 0;
+}
+.modal.prototype form .form-group > input[type="text"],
+.modal.prototype form .form-group input-group {
+  margin: 5px 0;
+}
+.modal.prototype .checkbox label {
+  padding: 0;
+}
+.modal.prototype form .form-group {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-transition: padding 300ms ease;
+  -moz-transition: padding 300ms ease;
+  -o-transition: padding 300ms ease;
+  transition: padding 300ms ease;
+}
+.modal.prototype form .form-group label {
+  margin-bottom: 0;
+}
+.modal.prototype .n-inline-description {
+  display: inline-block;
+}
+.modal.prototype .alert-info .close .svg-icon {
+  height: 8px;
+  width: 8px;
+}
+.modal.prototype .alert-info {
+  background-color: #d3e4f0 !important;
+  border: 1px solid #94bad6 !important;
+  color: #3e8bc4 !important;
+  background-color: rgba(38, 165, 240, 0.1) !important;
+  border-width: 0 !important;
+  border-radius: 0 !important;
+  text-align: left !important;
+  padding: 15px 20px !important;
+  box-shadow: 0 -1px 0px rgba(38, 187, 240, 0.1) !important;
+}
+.modal.prototype .n-modal-wrapper .n-modal-content-wrapper .n-modal-alert-header.not-empty,
+.modal.prototype .n-modal-wrapper .n-modal-content-wrapper .n-inline-alert.not-empty {
+  margin: 0;
+  padding: 0;
+}
+.modal.prototype .n-modal-wrapper .n-modal-content-wrapper form label:not(.n-checkbox) {
+  margin-right: 20px;
+}
