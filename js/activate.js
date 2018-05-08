@@ -8,7 +8,7 @@ const activation=`
     <a href='../img/initial.cluster.json' download><button class='secondary' style='margin-bottom:20px; margin-right:10px;'>
       Download Cluster File
     </button></a>
-  <a href='https://john00123.github.io/ntnx-CCU-portal/overview.html'>  <button class='secondary' style='margin-bottom:20px;'>
+  <a href='https://john00123.github.io/ntnx-CCU-portal/overview.html'  target="_blank">  <button class='secondary' style='margin-bottom:20px;'>
       Licensing Page
     </button></a>
   </div>
