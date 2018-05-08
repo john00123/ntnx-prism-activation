@@ -6,7 +6,7 @@ const activation=`
   </p>
   <div clas='two-col'>
     <a href='../img/cluster.xml' download><button class='secondary' style='margin-bottom:20px; margin-right:10px;'>
-      Download Cluster File
+      Download Cluster Files
     </button></a>
   <a href='https://john00123.github.io/ntnx-CCU-portal/overview.html'  target="_blank">  <button class='secondary' style='margin-bottom:20px;'>
       Licensing Page
