@@ -287,6 +287,56 @@ article {
   max-width: 500px;
 }
 
+.upload-file {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.upload-file .file-button {
+  border: 1px solid #D5DAE0;
+  border-radius: 4px;
+  padding: 11px 15px;
+  color: #22272E;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  margin: 0;
+  outline: none;
+  height: 32px;
+  width: auto;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+  border-color: #B8BFCA;
+}
+
+.upload-file .file-button:hover {
+  color: #22A5F7;
+  cursor: pointer;
+}
+
+.upload-file .file-button:active {
+  color: #91d2fb;
+}
+
+.upload-file .file-button span {
+  height: 10px;
+  display: block;
+  font-weight: 500;
+  line-height: 9pt;
+}
+
+.upload-file input#path2.path {
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+  border-radius: 4px 0 0 4px;
+}
+
 #particles-background,
 #particles-foreground {
   left: -51%;
