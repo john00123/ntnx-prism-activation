@@ -38,6 +38,6 @@ let pageload = (index) => {
 }
 
 $(document).ready(function() {
-  const index = 0
+  const index = 2
   pageload(index)
 });

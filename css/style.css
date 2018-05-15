@@ -192,10 +192,12 @@ article {
   color: white;
   background-color: rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration-color: transparent;
 }
 
 .secondary:active {
   background-color: rgba(0, 0, 0, 0.16);
+  text-decoration-color: transparent;
 }
 
 .inactive {
@@ -247,6 +249,13 @@ article {
   flex-direction: row;
 }
 
+.two-col-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .fs {
   height: 100vh;
   width: 100vw;
@@ -285,6 +294,25 @@ article {
   justify-content: center;
   flex-direction: column;
   max-width: 500px;
+}
+
+.file-select {
+  padding: 8px 15px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.link {
+  color: #22A5F7;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .upload-file {

@@ -1,7 +1,7 @@
 const pulse=
 `
   <h2>Pulse Data</h2>
-  <p style='white-space:pre-wrap'>Pulse continuously monitors cluster health and periodically sends machine data to Nutanix’s cloud based analytics engine. It automatically takes action when a problem has occurred or is about to occur.  <a href=’#’>Learn More</a>
+  <p style='white-space:pre-wrap'>Pulse continuously monitors cluster health and periodically sends machine data to Nutanix’s cloud based analytics engine. It automatically takes action when a problem has occurred or is about to occur.  <a href=’#’ class='link'>Learn More</a>
 
 Nutanix strongly recommends not disabling this feature to improve your support experience in the event of a failure or critical system issue.
 
@@ -14,7 +14,7 @@ By enabling Pulse you elect and authorize Nutanix to electronically collect Puls
   <hr>
 
   <div class='two-col fw btns'>
-    <button class='secondary previous' style='opacity:0;'>Previous</button> 
+    <button class='secondary previous' style='opacity:0;'>Previous</button>
     <button class='primary expand'> Continue</button> <button class='primary accept' style='display:none;'>  Accept</button>
   </div>
 `;

@@ -73,9 +73,11 @@ article{
     color:white;
     background-color:rgba(0,0,0,0.08);
     border: 1px solid rgba(255,255,255,0.5);
+    text-decoration-color: transparent;
   }
   &:active{
     background-color:rgba(0,0,0,0.16);
+    text-decoration-color: transparent;
   }
 }
 
@@ -120,6 +122,7 @@ article{
 
 //layout
 .two-col  {@include flex(flex-start, space-between, row)}
+.two-col-center  {@include flex(center, space-between, row)}
 .fs{
   @include size(100vh, 100vw);
   position: absolute;
@@ -155,6 +158,18 @@ article{
   max-width: 500px;
 }
 
+
+.file-select{
+  padding: 8px 15px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.link{
+  @include link;
+}
 .upload-file {
 	width: 100%;
 	flex-shrink: 0;
@@ -175,7 +190,6 @@ article{
 		border-radius: 4px 0 0 4px;
 	}
 }
-
 
 //particle animation
 #particles-background,
