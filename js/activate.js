@@ -1,5 +1,5 @@
 const activation=`
-  <h2>Product activation</h2>
+  <h2>Acropolis License</h2>
   <p>
     Cluster will be operable after applying Acropolis Licenses. </br>
     Follow the steps below to activate this cluster.
