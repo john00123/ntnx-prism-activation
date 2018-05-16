@@ -84,6 +84,7 @@ article{
 //steps states
 .inactive {
   opacity: 0.2;
+  pointer-events: none;
   .badge{
     background-color: transparent;
     border:1px solid white;
@@ -167,9 +168,8 @@ a:hover{
   text-decoration: none;
 }
 
-.link{
-  @include link;
-}
+.link{ @include link;}
+
 .upload-file {
 	width: 100%;
 	flex-shrink: 0;

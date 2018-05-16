@@ -27,6 +27,12 @@ let pageload = (index) => {
       $(`aside h3`).removeClass();
       $(`aside h3:eq(0)`).addClass('completed');
       $(`aside h3:eq(1)`).addClass('completed');
+      $('.nxt-sub-step').click(()=>{
+        $('.two-col-center:eq(1)').removeClass('inactive');
+      });
+      $('.nxt-sub-step:eq(1)').click(()=>{
+        $('.two-col-center:eq(2)').removeClass('inactive');
+      });
       $('#file').change(()=>{
         $('#file').val().length > 0 ? $('.primary').removeClass('inactive') : null;
         //heres some comment

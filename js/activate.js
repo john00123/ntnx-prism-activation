@@ -10,7 +10,7 @@ const activation=`
       <p>The cluster summary file has capacity information about this cluster that is required for licensing. </p>
     </div>
     <a href='./img/cluster.xml' download style='flex-shrink:0; margin-left:20px;'>
-      <button class='secondary'> &nbsp; Download &nbsp;</button>
+      <button class='secondary nxt-sub-step'> &nbsp; Download &nbsp;</button>
     </a>
   </div>
   <hr></br>
@@ -21,7 +21,7 @@ const activation=`
       <p>Log in to the Nutanix support portal, click on Manage Licenses, and upload the cluster file that was downloaded in Step 1. </p>
     </div>
     <a href='https://john00123.github.io/ntnx-CCU-portal/overview.html'  target="_blank" style='flex-shrink:0; margin-left:20px;'>
-      <button class='secondary'>Go to Portal</button>
+      <button class='secondary nxt-sub-step'>Go to Portal</button>
     </a>
   </div>
   <hr></br>
@@ -38,8 +38,4 @@ const activation=`
       <label for='file' class='secondary file-select' > Upload File</label>
     </a>
   </div>
-
-
-
-
 `;
