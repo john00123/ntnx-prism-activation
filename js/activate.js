@@ -8,14 +8,18 @@ const activation=`
     <div>
       <h3> Step 1: Download cluster summary file </h3>
       <p>The cluster summary file has capacity information about this cluster that is required for licensing. </p>
-      <h3> Unable to download? Copy down the cluster information </h3>
     </div>
 
     <a href='./img/cluster.xml' download style='flex-shrink:0; margin-left:20px;'>
       <button class='secondary nxt-sub-step'> &nbsp; Download &nbsp;</button>
     </a>
   </div>
-  <div class='manual-box'>
+  <details>
+    <summary>
+    Unable to download? Copy down the cluster information
+    </summary>
+
+    <div class='manual-box'>
     <p class='.two-col' style='width:100%;'><span>Cluster UUID: </span> <kbd>000560f2-d057-4e40-2a56-0cc47ac0eaf2</kbd></p>
 
     <p><span>Signature: </span> <kbd>4zgpZhT YnGCA5C Tx2Aer2 n3E+B8=</kbd></p>
@@ -25,7 +29,8 @@ const activation=`
     <p><span>License Version: </span> <kbd>2</kbd></p>
 
     <p><span>Node Count: </span> <kbd>NX-1065-G4 x 4</kbd></p>
-  </div>
+    </div>
+  </details>
   <hr></br>
 
   <div class='two-col-center fw inactive'>

@@ -44,6 +44,6 @@ let pageload = (index) => {
 }
 
 $(document).ready(function() {
-  const index = 2
+  const index = 0
   pageload(index)
 });
